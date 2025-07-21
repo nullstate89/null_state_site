@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Null State</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="terminal">
+    <div class="line">Welcome to Null State.</div>
+    <div class="line">Type "products" or "mission" to continue.</div>
+    <div class="options">
+      <div class="line option" onclick="goTo('catalog')">&gt; PRODUCTS</div>
+      <div class="line option" onclick="goTo('mission')">&gt; MISSION STATEMENT</div>
+    </div>
+  </div>
+  <script>
+    let buffer = "";
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Backspace") {
+        buffer = buffer.slice(0, -1);
+      } else if (e.key.length === 1) {
+        buffer += e.key;
+      }
+      if (buffer.toLowerCase().includes("products")) {
+        window.location.href = "catalog.html";
+      } else if (buffer.toLowerCase().includes("mission")) {
+        window.location.href = "mission.html";
+      }
+    });
+    function goTo(page) {
+      if (page === 'catalog') {
+        window.location.href = "catalog.html";
+      } else if (page === 'mission') {
+        window.location.href = "mission.html";
+      }
+    }
+  </script>
+</body>
+</html>
