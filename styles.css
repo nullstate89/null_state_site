@@ -1,67 +1,62 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #fefefe;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #000;
-  margin-bottom: 20px;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
 }
 
-header a {
+header h1, header nav a {
+  color: white;
   text-decoration: none;
-  font-size: 24px;
-  color: #000;
+}
+
+main {
+  padding: 2rem;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.product {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .product img {
-  width: 100%;
-  border: 2px solid #000;
-  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.product p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
 }
 
 .price {
-  font-weight: bold;
-  color: #cc0000;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-  margin: auto;
   display: block;
-  max-width: 90%;
-  max-height: 80%;
-}
-
-.close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
+  margin-top: 0.5rem;
   font-weight: bold;
-  cursor: pointer;
+  color: red;
 }
