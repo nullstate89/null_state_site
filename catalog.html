@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Null State // Catalog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="mission.html">ANTI-FASCIST DROP</a></h1>
+  </header>
+  <div class="grid">
+    <div class="product">
+      <img src="lined_eyes.png" alt="Lined Eyes. Blind Mind." />
+      <h2>LINED EYES. BLIND MIND.</h2>
+      <p>Wrote a memoir about poverty. Then voted to make more of it.</p>
+      <p class="price">FREE + SHIPPING</p>
+    </div>
+    <div class="product">
+      <img src="debt_slaves_for_pop.png" alt="Debt Slaves for Papa" />
+      <h2>DEBT SLAVES FOR PAPA</h2>
+      <p>2025: Year of the Coughing Blood</p>
+      <p class="price">FREE + SHIPPING</p>
+    </div>
+    <div class="product">
+      <img src="jeff_terrific_guy.png" alt="Trump Jeff Shirt" />
+      <h2>NULL STATE RECORD // T-001</h2>
+      <p>“I’ve known Jeff for fifteen years. He’s a terrific guy.” — Trump, 2002</p>
+      <p class="price">FREE + SHIPPING</p>
+    </div>
+    <div class="product">
+      <img src="make_fascists_afriad.png" alt="Complacency Shirt" />
+      <h2>MAKE FASCISTS AFRAID AGAIN</h2>
+      <p>Every fascist dreams of a quiet neighbor.</p>
+      <p class="price">FREE + SHIPPING</p>
+    </div>
+    <div class="product">
+      <img src="this_guy_christian_fascist.png" alt="Christian Fascist Shirt" />
+      <h2>CHRISTIAN FASCISM IS STILL FASCISM</h2>
+      <p>Jesus didn’t vote for him. Exxon did.</p>
+      <p class="price">FREE + SHIPPING</p>
+    </div>
+  </div>
+
+  <form action="https://formspree.io/f/mnnzjkbq" method="POST">
+    <h2 style="text-align:center;">Enter the Raffle</h2>
+    <div class="form-section">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-section">
+      <label for="shirt_choice">Select Shirt:</label>
+      <select name="shirt_choice" required>
+        <option value="">--Select Shirt--</option>
+        <option value="LINED EYES. BLIND MIND.">LINED EYES. BLIND MIND.</option>
+        <option value="DEBT SLAVES FOR PAPA">DEBT SLAVES FOR PAPA</option>
+        <option value="NULL STATE RECORD // T-001">NULL STATE RECORD // T-001</option>
+        <option value="MAKE FASCISTS AFRAID AGAIN">MAKE FASCISTS AFRAID AGAIN</option>
+        <option value="CHRISTIAN FASCISM IS STILL FASCISM">CHRISTIAN FASCISM IS STILL FASCISM</option>
+      </select>
+    </div>
+    <div class="form-section">
+      <label for="size">Select Size:</label>
+      <select name="size" required>
+        <option value="">--Select Size--</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">X-Large</option>
+        <option value="XXL">XX-Large</option>
+      </select>
+    </div>
+    <button type="submit">Submit Raffle Entry</button>
+  </form>
+</body>
+</html>
