@@ -47,28 +47,34 @@
     </div>
   </div>
 
-  <form action="https://formspree.io/f/mnnzjkbq" method="POST">
-    <h2 style="text-align:center;">Enter the Raffle</h2>
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <select name="shirt_choice" required>
-      <option value="">Select Shirt</option>
-      <option value="LINED EYES. BLIND MIND.">LINED EYES. BLIND MIND.</option>
-      <option value="DEBT SLAVES FOR PAPA">DEBT SLAVES FOR PAPA</option>
-      <option value="NULL STATE RECORD // T-001">NULL STATE RECORD // T-001</option>
-      <option value="MAKE FASCISTS AFRAID AGAIN">MAKE FASCISTS AFRAID AGAIN</option>
-      <option value="CHRISTIAN FASCISM IS STILL FASCISM">CHRISTIAN FASCISM IS STILL FASCISM</option>
-    </select>
-    <select name="size" required>
-      <option value="">Select Size</option>
-      <option value="S">Small</option>
-      <option value="M">Medium</option>
-      <option value="L">Large</option>
-      <option value="XL">X-Large</option>
-      <option value="XXL">XX-Large</option>
-    </select>
-    <button type="submit">Submit Raffle Entry</button>
-  </form>
+ <form action="https://formspree.io/f/mnnzjkbq" method="POST">
+  <h2 style="text-align:center;">Enter the Raffle</h2>
+  <input type="text" name="name" placeholder="Your Name" required style="display:block; margin:10px auto; padding:10px; width:90%; max-width:400px;" />
+  <input type="email" name="email" placeholder="Your Email" required style="display:block; margin:10px auto; padding:10px; width:90%; max-width:400px;" />
+
+  <label for="shirt_choice" style="display:block; text-align:center; margin-top:20px;">Choose a Shirt</label>
+  <select name="shirt_choice" required style="display:block; margin:10px auto; padding:10px; width:90%; max-width:400px;">
+    <option value="">Select Shirt</option>
+    <option value="LINED EYES. BLIND MIND.">LINED EYES. BLIND MIND.</option>
+    <option value="DEBT SLAVES FOR PAPA">DEBT SLAVES FOR PAPA</option>
+    <option value="NULL STATE RECORD // T-001">NULL STATE RECORD // T-001</option>
+    <option value="MAKE FASCISTS AFRAID AGAIN">MAKE FASCISTS AFRAID AGAIN</option>
+    <option value="CHRISTIAN FASCISM IS STILL FASCISM">CHRISTIAN FASCISM IS STILL FASCISM</option>
+  </select>
+
+  <label for="size" style="display:block; text-align:center; margin-top:20px;">Choose a Size</label>
+  <select name="size" required style="display:block; margin:10px auto; padding:10px; width:90%; max-width:400px;">
+    <option value="">Select Size</option>
+    <option value="S">Small</option>
+    <option value="M">Medium</option>
+    <option value="L">Large</option>
+    <option value="XL">X-Large</option>
+    <option value="XXL">XX-Large</option>
+  </select>
+
+  <button type="submit" style="display:block; margin:20px auto; padding:12px 24px; font-size:16px;">Submit Raffle Entry</button>
+</form>
+
 
   <div id="imgModal" class="modal" onclick="closeModal()">
     <span class="close" onclick="closeModal()">&times;</span>
