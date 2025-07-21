@@ -47,9 +47,60 @@
       <div class="price">FREE + SHIPPING</div>
     </div>
   </div>
+<style>
+  .raffle-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
 
-[media pointer="file-service://file-QaFw5qgKLQGF2seMaeQsNE"]
-please rewrite the line of code pertaining to this that i can plug into github to make the edges of each box all even with each other
+  .raffle-form input,
+  .raffle-form select,
+  .raffle-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .raffle-form button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .raffle-form button:hover {
+    background-color: #ddd;
+  }
+</style>
+
+<div class="raffle-form">
+  <h2 style="text-align:center;">Enter the Raffle</h2>
+  <form action="https://formspree.io/f/mnnzjkbq" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <select name="shirt" required>
+      <option value="" disabled selected>Select Shirt</option>
+      <option value="Lined Eyes">Lined Eyes. Blind Mind.</option>
+      <option value="Debt Slaves">Debt Slaves for Papa</option>
+      <option value="Null State Record">NULL STATE RECORD T-001</option>
+      <option value="Make Fascists Afraid">Make Fascists Afraid Again</option>
+      <option value="Christian Fascism">Christian Fascism is Still Fascism</option>
+    </select>
+
+    <select name="size" required>
+      <option value="" disabled selected>Select Size</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">X-Large</option>
+      <option value="XXL">XX-Large</option>
+    </select>
+
+    <button type="submit">Submit Raffle Entry</button>
 
   <div id="imgModal" class="modal" onclick="closeModal()">
     <span class="close">&times;</span>
