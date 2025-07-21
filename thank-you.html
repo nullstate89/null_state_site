@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – Null State</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    if (
+      document.referrer === '' ||
+      !document.referrer.includes('nullstatecollective.vercel.app')
+    ) {
+      window.location.href = '/';
+    }
+  </script>
+</head>
+
+<body>
+  <h1>🎉 You're In.</h1>
+  <p>Thanks for entering the Null State raffle.</p>
+  <p>
+    Shirts ship within 2 weeks of the drop closing.<br />
+    We'll email you soon with a shipping cost estimate and payment link.
+  </p>
+  <p>
+    Your entry supports the movement. Welcome to the resistance.
+  </p>
+  <a href="/" class="button">Return to Catalog</a>
+</body>
+</html>
